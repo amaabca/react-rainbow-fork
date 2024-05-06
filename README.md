@@ -28,6 +28,12 @@ React Rainbow is a collection of components that will reliably help you build yo
 
 </div>
 
+### 🍴 AMA Fork
+
+- Removes `xlsx` library and its dependant component, `ImportRecordsFlow`.
+- Adds `.nvmrc`, to use existing tools.
+- Adds build folders (`components`, `libs`, `styles`, and `esm`) to source control, so this library can be imported.
+
 ### ✨ Features
 
 -   90+ components built on top of React.
