@@ -12,8 +12,6 @@
         "examples"
     ],
     "scripts": {
-        "start": "./node_modules/.bin/styleguidist server",
-        "build:library": "./node_modules/.bin/styleguidist build",
         "build:components": "yarn build:components:node && yarn build:components:esm",
         "build:components:node": "node ./scripts/build node --out-dir ./",
         "build:components:esm": "node ./scripts/build esm --out-dir ./",
@@ -27,7 +25,6 @@
         "test": "jest ./src --verbose",
         "test:integration": "wdio",
         "generate:pageObjectDocs": "jsdoc -c jsdoc.conf.js",
-        "deploy:library": "yarn build:library && yarn generate:pageObjectDocs && firebase deploy -P default",
         "format": "prettier --write '{src,examples, library, tutorials}/**/*.{js,json,md}'",
         "prepare:canary": "node scripts/prepare-canary.js",
         "wait:on:local:server": "wait-on http-get://localhost:6060"
@@ -40,7 +37,6 @@
         "clipboard-copy": "^2.0.0",
         "prop-types": "^15.6.2",
         "react-async-script-loader": "^0.3.0",
-        "react-typeform-embed": "^0.2.1",
         "rehype-highlight": "^4.0.0",
         "rehype-minify-whitespace": "^4.0.4",
         "rehype-react": "^6.1.0",
@@ -199,7 +195,6 @@
         "react-prismic-cms": "^0.3.1",
         "react-rainbow-components": "^1.24.0",
         "react-redux": "^5.1.0",
-        "react-styleguidist": "^9.2.0",
         "react-test-renderer": "^17.0.2",
         "redux": "^4.2.0",
         "redux-form": "^7.4.2",
